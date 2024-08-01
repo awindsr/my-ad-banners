@@ -17,11 +17,11 @@ interface AdBannerProps {
 }
 
 const buttonStyles = [
-  "px-4 py-2 bg-blue-500 text-white rounded font-medium",
-  "px-4 py-2 bg-yellow-500 text-white rounded font-medium",
-  "px-4 py-2 border-2 border-yellow-500 text-white rounded font-medium",
-  "px-4 py-2 bg-green-500 text-white rounded font-medium",
-  "px-4 py-2 bg-red-500 text-white rounded font-medium"
+  "px-4 py-2 bg-blue-500 text-white rounded font-medium text-md",
+  "px-4 py-2 bg-yellow-500 text-white rounded font-medium text-md",
+  "px-4 py-2 border-2 border-yellow-500 text-white rounded font-medium text-md",
+  "px-4 py-2 bg-green-500 text-white rounded font-medium text-md",
+  "px-4 py-2 bg-red-500 text-white rounded font-medium text-md"
 ];
 
 const editButtonStyles = [
@@ -47,10 +47,10 @@ const BannerImageComp: React.FC<AdBannerProps> = ({ banner, onUpdate }) => {
 
   return (
     <div className="relative rounded shadow-md overflow-hidden">
-      <img src={banner.image} alt={banner.title} className="w-full h-60 object-fill" />
+      <img src={banner.image} alt={banner.title} className="w-full h-[300px] object-fill" />
       <div className="absolute inset-0 flex flex-col justify-end items-start text-white p-4 bg-black bg-opacity-20 ">
-        <h2 className="text-2xl font-bold mb-2">{banner.title}</h2>
-        <p className="text-center mb-2">{banner.description}</p>
+        <h2 className="text-3xl font-bold mb-2 ">{banner.title}</h2>
+        <p className="text-center mb-2 text-2xl font-light">{banner.description}</p>
         <button className={buttonStyle}>{banner.cta}</button>
         <button
           onClick={() => setIsEditing(true)}

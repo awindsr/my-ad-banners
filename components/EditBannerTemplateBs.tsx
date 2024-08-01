@@ -37,7 +37,7 @@ const EditBannerTemplateBs: React.FC<EditBannerProps> = ({ banner, onSave, onClo
           <div className="relative rounded overflow-hidden bg-gray-100" style={{ height: '200px' }}>
             <img src={image} alt={title} className="w-full h-full object-fill"  />
             <div className="absolute inset-0 flex flex-col justify-end items-start text-white p-4  bg-black bg-opacity-20 ">
-              <h3 className="text-2xl font-bold mb-2">{title}</h3>
+              <h3 className="text-xl font-bold mb-2">{title}</h3>
               <p className="text-center mb-2">{description}</p>
               <button className={ctaButtonStyle}>{cta}</button>
             </div>
