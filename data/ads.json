@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "Spring Sale",
+    "description": "Up to 50% off on all spring items!",
+    "cta": "Shop Now",
+    "image": "https://bannerbot-public.s3.ap-south-1.amazonaws.com/templates/5/square.png",
+    "background": "#f0f8ff"
+  },
+  {
+    "id": 2,
+    "title": "New Arrivals",
+    "description": "Check out the latest collection of our products.",
+    "cta": "Browse Collection",
+    "image": "https://bannerbot-public.s3.ap-south-1.amazonaws.com/templates/9/square.png",
+    "background": "#e6e6fa"
+  },
+  {
+    "id": 3,
+    "title": "Exclusive Deals",
+    "description": "Get exclusive deals on your favorite items.",
+    "cta": "Get Deals",
+    "image": "https://bannerbot-public.s3.ap-south-1.amazonaws.com/templates/1/square.png",
+    "background": "#fff0f5"
+  },
+  {
+    "id": 4,
+    "title": "Limited Time Offer",
+    "description": "Hurry up! Limited time offer on selected items.",
+    "cta": "Shop Now",
+    "image": "https://bannerbot-public.s3.ap-south-1.amazonaws.com/templates/15/square.png",
+    "background": "#fafad2"
+  },
+  {
+    "id": 5,
+    "title": "Summer Collection",
+    "description": "Discover our new summer collection.",
+    "cta": "Explore Now",
+    "image": "https://bannerbot-public.s3.ap-south-1.amazonaws.com/templates/5/square.png",
+    "background": "#ffebcd"
+  },
+  {
+    "id": 6,
+    "title": "Back to School",
+    "description": "Everything you need for the new school year.",
+    "cta": "Shop School Supplies",
+    "image": "https://bannerbot-public.s3.ap-south-1.amazonaws.com/templates/9/square.png",
+    "background": "#e0ffff"
+  },
+  {
+    "id": 7,
+    "title": "Holiday Specials",
+    "description": "Celebrate the holidays with special discounts.",
+    "cta": "See Specials",
+    "image": "https://bannerbot-public.s3.ap-south-1.amazonaws.com/templates/1/square.png",
+    "background": "#f5f5dc"
+  },
+  {
+    "id": 8,
+    "title": "Winter Clearance",
+    "description": "Clearance sale on winter clothing.",
+    "cta": "Shop Clearance",
+    "image": "https://bannerbot-public.s3.ap-south-1.amazonaws.com/templates/15/square.png",
+    "background": "#f0e68c"
+  }
+]
