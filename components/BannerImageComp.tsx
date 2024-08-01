@@ -64,6 +64,7 @@ const BannerImageComp: React.FC<AdBannerProps> = ({ banner, onUpdate }) => {
           banner={banner}
           onSave={handleSave}
           onClose={() => setIsEditing(false)}
+          ctaButtonStyle={buttonStyle}
         />
       )}
     </div>

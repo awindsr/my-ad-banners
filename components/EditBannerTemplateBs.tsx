@@ -12,22 +12,24 @@ interface EditBannerProps {
   };
   onSave: (updatedBanner: any) => void;
   onClose: () => void;
+  ctaButtonStyle: string;
 }
 
-const EditBannerTemplateBs: React.FC<EditBannerProps> = ({ banner, onSave, onClose }) => {
+const EditBannerTemplateBs: React.FC<EditBannerProps> = ({ banner, onSave, onClose, ctaButtonStyle  }) => {
   const [title, setTitle] = useState(banner.title);
   const [description, setDescription] = useState(banner.description);
   const [cta, setCta] = useState(banner.cta);
   const [image, setImage] = useState(banner.image);
+  const [background, setBackground] = useState(banner.background);
 
 
   const handleSave = () => {
-    onSave({ id: banner.id, title, description, cta, image });
+    onSave({ title, description, cta, image, background  });
     onClose();
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-black bg-opacity-50 p-4 flex items-center justify-center h-full">
+    <div className="fixed inset-0 z-50 bg-black bg-opacity-50 p-4 flex items-center justify-center h-full text-black">
       <div className="bg-white rounded-lg shadow-lg p-4 max-w-lg w-full max-h-[1/2] overflow-y-auto">
         {/* Live Preview */}
         <div className="mb-4">
@@ -37,7 +39,7 @@ const EditBannerTemplateBs: React.FC<EditBannerProps> = ({ banner, onSave, onClo
             <div className="absolute inset-0 flex flex-col justify-end items-start text-white p-4  bg-black bg-opacity-20 ">
               <h3 className="text-2xl font-bold mb-2">{title}</h3>
               <p className="text-center mb-2">{description}</p>
-              <button className="px-4 py-2 bg-blue-500 text-white rounded">{cta}</button>
+              <button className={ctaButtonStyle}>{cta}</button>
             </div>
           </div>
         </div>
