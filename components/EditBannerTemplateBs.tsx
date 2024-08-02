@@ -20,11 +20,11 @@ const EditBannerTemplateBs: React.FC<EditBannerProps> = ({ banner, onSave, onClo
   const [description, setDescription] = useState(banner.description);
   const [cta, setCta] = useState(banner.cta);
   const [image, setImage] = useState(banner.image);
-  const [background, setBackground] = useState(banner.background);
+  // const [background, setBackground] = useState(banner.background);
 
 
   const handleSave = () => {
-    onSave({ title, description, cta, image, background  });
+    onSave({ title, description, cta, image  });
     onClose();
   };
 
