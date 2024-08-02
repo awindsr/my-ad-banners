@@ -23,7 +23,7 @@ const Home: React.FC = () => {
     <div>
       <Header/>
   
-    <div className="grid grid-cols-2 gap-4 p-8 bg-[#eff3f4]">
+    <div className="grid grid-cols-2 gap-4 p-8 bg-gray-800">
       {bannerData.map((banner) => (
         <BannerImageComp
           key={banner.id}
